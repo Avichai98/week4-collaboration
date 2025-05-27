@@ -1,8 +1,9 @@
-name: JavaScript Lint (No Local Setup)
+name: JavaScript Lint (Flat Config)
 
 on:
   push:
     branches: main
+
 
 jobs:
   lint:
@@ -17,9 +18,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install ESLint globally
+      - name: Install ESLint
         run: npm install -g eslint
 
-      - name: Run ESLint on demo.js
-        run: |
-          eslint demo.js --no-eslintrc --rule "semi: error"
+      - name: Run ESLint
+        run: eslint demo.js
