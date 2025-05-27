@@ -1,5 +1,3 @@
 
-Conflict feature-a
-+
-Conflict feature-b
+Conflict feature-b + feature-a
 
