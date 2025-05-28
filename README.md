@@ -530,6 +530,51 @@ If you want to clean up all commits on your branch that are not in `main`:
 git rebase -i main
 ```
 
+You can also use it to edit commit messages, reorder commits, or drop unnecessary ones.
+
+
+
+for exmaple:
+```bash
+yosef@yosef-ThinkBook-14-G4-IAP:~/Documents/github/week4-colaboration/week4-collaboration$ git log --oneline --graph --all
+* 51f576d (HEAD -> new-clean-feature) add clean rebase example
+* daf612d (origin/main, origin/HEAD, main) Add examples of graph tree before and after rebase in README.md
+*   5c73a9d Merge branch 'main' of https://github.com/Avichai98/week4-collaboration
+|\  
+| *   368fd96 Merge pull request #1 from Avichai98/feature-a
+| |\  
+| | * 82de7be (origin/feature-a) updated conflict.txt
+* | | 8493b89 Refactor code structure for improved readability and maintainability
+|/ /  
+* | 7d71491 Update README.md
+* | b5abf2f fix 2 syntax issues
+* | 93642b1 add js
+* | e8d641d change to workflow dir
+* | 9164e58 .
+* | 3f8588d add action
+* | e4ba0cc Adding REFLECTION.md
+* | 322f2f0 Conflict to feature-b after cherry-pick
+|/  
+* 60a9f36 Updated conflict.txt by main
+* eb08b9a updating conflict.txt
+*   3724ba4 Merge branch 'feature-b'
+|\  
+| * b943010 (origin/feature-b) Conflict to feature-b
+* | 9cb5c3c Conflict to feature-a
+|/  
+* 2f50cbd Initial commit
+yosef@yosef-ThinkBook-14-G4-IAP:~/Documents/github/week4-colaboration/week4-collaboration$ git rebase -i main
+[detached HEAD e3cf5e6] this is test for chnage commit message
+ Date: Wed May 28 15:24:50 2025 +0300
+ 5 files changed, 102 insertions(+)
+ create mode 100644 .idea/indexLayout.xml
+ create mode 100644 .idea/projectSettingsUpdater.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 .idea/workspace.xml
+ create mode 100644 newfile.txt
+Successfully rebased and updated refs/heads/new-clean-feature.
+```
+
 ---
 
 
