@@ -577,6 +577,13 @@ Successfully rebased and updated refs/heads/new-clean-feature.
 
 ---
 
+## Repository Overview
+
+This repository, `week4-collaboration`, demonstrates effective teamwork using Git and GitHub.  
+Both Avichai and Yosef contributed from their own computers, regularly sharing and integrating each other's changes using Git's collaboration features.  
+We used branches, merging, rebasing, and pull requests to coordinate our work, resolve conflicts, and keep our project history clear.  
+The README provides step-by-step instructions and best practices for collaborative development.
+
 
 
 
