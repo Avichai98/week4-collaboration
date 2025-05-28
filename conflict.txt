@@ -1,4 +1,3 @@
-
-Conflict feature-b + feature-a + main
+Conflict feature-b + feature-a + main + c
 
 Conflict feature-b
