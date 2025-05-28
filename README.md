@@ -154,7 +154,6 @@ git commit
 
 ### Rebase Example
 
-*Show the graph tree before rebase here.*
 
 ```bash
 git switch feature-a
@@ -171,7 +170,38 @@ Conflict feature-a
 +
 Conflict feature-b
 ```
-*Show the graph tree after rebase here.*
+
+### Graph tree before rebase here.
+```bash
+git log --oneline --graph --all
+* 700c76c (main) main: add main.txt
+| * 140a639 (HEAD -> feature-rebase-demo) feature-rebase-demo: add demo.txt
+|/  
+*   792088e (feature-a) Merge branch 'feature-b'
+|\  
+| * 87ef070 (feature-b) Conflict to feature-b
+* | ed1d521 Conflict to feature-a
+|/  
+* e98e0e4 (origin/main) first commit
+```
+
+
+
+### Graph tree after rebase here.
+
+```bash
+git log --oneline --graph --all
+* b84ae5d (HEAD -> feature-rebase-demo) feature-rebase-demo: add demo.txt
+* 700c76c (main) main: add main.txt
+*   792088e (feature-a) Merge branch 'feature-b'
+|\  
+| * 87ef070 (feature-b) Conflict to feature-b
+* | ed1d521 Conflict to feature-a
+|/  
+* e98e0e4 (origin/main) first commit
+```
+
+
 
 ---
 
